@@ -36,7 +36,6 @@
     "lint:eslint:fix": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --fix",
     "lint:js": "npm run lint:eslint -- . ",
     "lint:staged": "lint-staged",
-    "test": "cross-env NODE_ENV=test mocha --require @babel/register app/.setup.js ./app/containers/**/tests/*.test.js",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "prettify": "prettier --write"
   },
@@ -76,7 +75,6 @@
       "ip",
       "jsdom",
       "minimist",
-      "mocha",
       "moment",
       "sanitize.css",
       "serve-favicon",
@@ -137,7 +135,6 @@
     "lodash": "^4.17.15",
     "lru-memoize": "^1.0.2",
     "minimist": "1.2.0",
-    "mocha": "^6.1.4",
     "moment": "^2.22.2",
     "mui-datatables": "^2.13.1",
     "prop-types": "15.7.2",
